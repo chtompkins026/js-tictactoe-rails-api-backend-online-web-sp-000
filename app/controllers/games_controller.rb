@@ -30,4 +30,4 @@ class GamesController < ApplicationController
     @game = Game.find(params[:id])
   end
  
-end #end of the class 
+end #end of the class l
