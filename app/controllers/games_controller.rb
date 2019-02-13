@@ -18,7 +18,6 @@ class GamesController < ApplicationController
  def update 
   @game.update(game_params)
   render json: @game 
-
  end 
  
 end
