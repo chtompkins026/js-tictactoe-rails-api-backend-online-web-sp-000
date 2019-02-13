@@ -4,7 +4,11 @@ class GamesController < ApplicationController
  def index 
    game = Game.all 
    render json: games 
-   
+ end 
+ 
+ def create
+  game = Game.create(game_params)
+  render json: game, status: 201 
  end 
  
  
