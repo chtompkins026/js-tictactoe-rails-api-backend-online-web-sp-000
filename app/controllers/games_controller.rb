@@ -1,3 +1,3 @@
-class Game < ActiveRecord::Base
-  serialize :state, Array
+class GamesController < ApplicationController
+ before_action :set_game, only[:show, :update]
 end
