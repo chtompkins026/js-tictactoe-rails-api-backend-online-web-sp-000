@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
- before_action :set_game, only[:show, :update]
+ before_action :set_game, only: [:show, :update]
  
  def index 
    game = Game.all 
