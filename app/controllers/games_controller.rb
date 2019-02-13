@@ -1,4 +1,3 @@
-class GamesController < ApplicationController
-  # Add your GamesController code here
-
+class Game < ActiveRecord::Base
+  serialize :state, Array
 end
